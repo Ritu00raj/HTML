@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4e4fb;
+        }
+
+        h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #1e6db2;
+        }
+
+        input[type="text"],input[type="file"], input[type="email"], input[type="date"], textarea,select[id] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ed0606;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width:auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="LPU logo.jpeg">
+    <h2>LPU Job Application Form</h2>
+    <form>
+        <div>
+        <label for="course">Apply for Course:</label>  
+        <select id="course" name="course">  
+        <option value="MCA">MBA</option>  
+        <option value="BCA">BCA</option>  
+        <option value="BBA">BBA</option>  
+        <option value="MCA" selected>MCA</option>   
+        </select> 
+        <h3>Personal Details :- </h3>
+        <label for="name">Full Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Full Name"><br><br>
+        <label for="name">Father Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Father Name"><br><br>
+        <label for="name">Mother Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Mother Name"><br><br>
+        <label for="email"> Email Id :- </label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email Id"><br><br>
+        <label for="dob">Date of Birth :-  </label>  
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="gender">Gender :- </label>
+        <label for="male">Male</label>  
+        <input type="radio" name="gender" id="male" value="male">  
+        <label for="female">Female</label>  
+        <input type="radio" name="gender" id="female" value="female"><br><br>
+        <label for="marital">Marital Status :- </label>
+        <label for="single">Single</label>  
+        <input type="radio" name="marital" id="single" value="single">  
+        <label for="married">Married</label>  
+        <input type="radio" name="martial" id="married" value="married"><br><br>
+        <label for="address">Permanent Address :- </label>
+        <input type="text" id="address" name="address" placeholder="Enter Your Permanent Address"><br><br>
+        <label for="address">Correspondence Address :- </label>
+        <input type="text" id="address" name="address" placeholder="Enter Your Correspondence Address"><br><br>
+        <label for="name">Aadhar No.  :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Aadhar No. "><br><br>
+        <label for="name">Pan No.  :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Pan No. "><br><br>
+
+        <h3>Academic Details :-  </h3>
+        <label for="Degree">10th</label> 
+        <input type="checkbox" name="degree" id="degree" value="degree" required><br>
+        <label for="name">Institute Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Institute Name"><br>
+        <label for="marks">Marks :- </label>
+        <input type="text" id="marks" name="marks" placeholder="Enter Your Marks"><br><br>
+        <label for="Degree">Intermidate :- </label>
+        <input type="checkbox" name="degree" id="degree" value="degree" required><br>
+        <label for="name">Institute Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Institute Name"><br>
+        <label for="marks">Marks :- </label>
+        <input type="text" id="marks" name="marks" placeholder="Enter Your Marks"><br><br>
+        <label for="Degree">Graduation</label>
+        <input type="checkbox" name="degree" id="degree" value="degree" required><br>
+        <label for="name">Institute Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Institute Name"><br>
+        <label for="marks">Marks :- </label>
+        <input type="text" id="marks" name="marks" placeholder="Enter Your Marks"><br><br>
+        <label for="Degree">Post Graduation</label>
+        <input type="checkbox" name="degree" id="degree" value="degree" required><br>
+        <label for="name">Institute Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Institute Name"><br>
+        <label for="marks">Marks :- </label>
+        <input type="text" id="marks" name="marks" placeholder="Enter Your Marks"><br><br>
+        <h3>Seminar Deliver :-  </h3>
+        <label for="seminar">Seminar Deliver</label> 
+        <input type="checkbox" name="seminar" id="seminar" value="seminar"><br>
+        <label for="name">Seminar Name :- </label>
+        <input type="text" id="name" name="name" placeholder="Enter The Seminar Name"><br>
+        <h3>Work Experience</h3>
+        <label for="experience">Experience :- </label>
+        <input type="text" id="experience" name="experience" placeholder="Enter Your Past Exp."><br><br>
+        <label for="last">Last Organization :- </label>
+        <input type="text" id="last" name="last" placeholder="Enter Your Past Org."><br><br>
+        <label for="reason">Reason Of Leaving :- </label>
+        <input type="text" id="reason" name="reason" placeholder="Enter the Reason"><br><br>
+        <label for="fileUpload">Upload Photograph :- </label>  
+        <input type="file" id="fileUpload" name="fileUpload" accept="image/*">  
+        <input type="submit" value="Upload Image"><br><br>
+        <label for="fileUpload">Upload Resume :- </label>  
+        <input type="file" id="fileUpload" name="fileUpload" accept="image/*">  
+        <input type="submit" value="Upload Image"><br><br>
+        <label for="fileUpload">Upload Experience Letter :- </label>  
+        <input type="file" id="fileUpload" name="fileUpload" accept="image/*">  
+        <input type="submit" value="Upload Image">
+    </div>
+    </form>
+    <a href="Websitelab.html">Go to Home Page</a>
+</body>
+</html>
